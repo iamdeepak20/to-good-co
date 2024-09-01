@@ -157,12 +157,89 @@ nav .nav-part2{
 }
 
 .page2 .elem .details {
-    height: 60px;
+    height: 8vh;
     width: 70%;
     border-radius: 50px;
     position: absolute;
     z-index: 9;
     background-color: palegoldenrod;
+    transition: all ease 0.4s;
+}
+
+.page2 .elem .details:hover{
+height: 36vh;
+}
+.page2 .elem .details:hover .details-con{
+    opacity: 1;
+}
+
+.page2 .elem .details .details-nav{
+    height: 8vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    /* border-radius: 50px; */
+   
+}
+.details-nav h4{
+    font-size: .9vw;
+    font-weight: 500;
+}
+.details-nav i{
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+.details .details-con{
+height:28vh ; 
+width: 100%;
+/* background-color: aquamarine;    */
+display: flex;
+align-self: center;
+justify-content: space-between;
+opacity: 0;
+transition: all ease 0.3s;
+}
+
+
+.details-con .details-left{
+    width:50%;
+    /* background-color: red; */
+}
+.details-con .details-left img{
+    object-fit: cover;
+    height: 120px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.details-con .details-left h4{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.details-con .details-right{
+    width:50%;
+   /* background-color: yellow; */
+}
+.details-con .details-right img{
+    object-fit: cover;
+    height: 120px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.details-con .details-right h4{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .page3 {
